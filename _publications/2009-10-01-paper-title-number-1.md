@@ -1,15 +1,14 @@
 ---
-title: "Paper Title Number 1"
+title: "Poster: Transmission Expansion Planning by Quantum Annealing"
 collection: publications
 permalink: /publication/2009-10-01-paper-title-number-1
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+date: 2023-05-23
+venue: 'ELIB-DLR'
+paperurl: 'https://elib.dlr.de/195390/1/Poster_QUANTUMatter2023.pdf'
+citation: 'López Baños, Sergio, Raventos Morera, Oriol and Díaz Fernández, Álvaro (2023). "Transmission Expansion Planning by  Quantum Annealing." <i>ELIB-DLR</i>.'
 ---
-This paper is about the number 1. The number 2 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](https://github.com/LopezBanos/LopezBanos.github.io/tree/master/files/paper1.pdf)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+Recommended citation: López Baños, Sergio, Raventos Morera, Oriol and Díaz Fernández, Álvaro (2023). "Transmission Expansion Planning by  Quantum Annealing." <i>ELIB-DLR</i>.

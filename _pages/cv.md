@@ -11,21 +11,23 @@ redirect_from:
 
 Education
 ======
-* B.S. in Physics, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Physics, University of Murcia, 2022
+* M.S. in Quantum Computing, Nebrija University, 2023
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 2021: Internship at AITALENTUM (ARTIFICIAL INTELLIGENCE)
+  * **Project name:** iFishCan
+  * **Duties included:** Merging pull requests
+  * **Supervisor:** Tania Chubey
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Oct 2022 - Present: Research Assistant at German Aerospace Center (DLR)
+  * **Project name :** eSubstation
+    * **Duties included:** Merging pull requests
+    * **Supervisor:** Dr. Oriol Raventos Morera
+  * **Project name :** ELEVATE - Transmission Expansion Planning by Quantum Annealing
+    * **Duties included:** Merging pull requests
+    * **Supervisor:** Dr. Elisabeth Lobe and Dr. Oriol Raventos Morera
   
 Skills
 ======
