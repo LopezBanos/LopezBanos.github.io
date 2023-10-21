@@ -14,10 +14,10 @@ Sergio López Baños is a Researcher at [Deutschland für Luft- und Raumfahrt (D
 Research Topics
 ======
 **Main Research Topic: Quantum Operation Research** <br>
-Nowadays, I consider myself an Optimization Engineer with a focus on operation research topics in quantum computing. My ongoing research explores the possibilities of combining both classical and quantum solvers to tackle a set of suitable optimization problems.
+Nowadays, I consider myself an Optimization Engineer with a focus on operation research topics in quantum computing. My ongoing research explores the possibilities of combining both classical and quantum solvers to tackle a set of suitable optimization problems. <br>
+<span style="color:blue">**Skills:** [AQC, Quantum Annealing, Benders Decomposition, QUARK]</span>.
 
 **Secondary Research Topics: Convolutional Neural Networks**<br>
 Part of my work at DLR consists on the implementation of a convolutional neural network to detect a set of items in electrical substations. <br>
-
 <span style="color:blue">**Skills:** [OpenStreetMap, Planet Python API, ResNet]</span>.
 
