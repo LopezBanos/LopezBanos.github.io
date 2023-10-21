@@ -2,6 +2,7 @@
 title: Planet Python API - The handy way of connecting with it'
 date: 2023-10-24
 permalink: /posts/2012/08/blog-post-1/
+bibliography: references.bib  
 tags:
   - Python
   - Planet
@@ -15,6 +16,10 @@ What is Planet Python API?
 
 Which is the old-school way of accesing to it?
 ======
+```python
+import testing
+```
 
 Which is the new and handy method to access it?
 ======
+[@R-base]
