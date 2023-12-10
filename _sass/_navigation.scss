@@ -92,7 +92,7 @@
       }
 
       &.current {
-        color: #2e293a;
+        color: #2C282F;
         background: $primary-color;
       }
 
@@ -197,7 +197,7 @@
     border: 0;
     outline: none;
     background-color: $primary-color;
-    color: #2e293a;
+    color: #2C282F;
     cursor: pointer;
   }
 
@@ -257,7 +257,7 @@
     padding: 5px;
     border: 1px solid $border-color;
     border-radius: $border-radius;
-    background: #2e293a;
+    background: #2C282F;
     box-shadow: 0 0 10px rgba(#000, 0.25);
 
     a {
@@ -292,7 +292,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: #2e293a transparent;
+      border-color: #2C282F transparent;
       display: block;
       z-index: 1;
     }
@@ -334,13 +334,13 @@
     margin-left: -0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    color: #2e293a;
+    color: #2C282F;
     font-weight: bold;
     background: $primary-color;
     border-radius: $border-radius;
 
     &:hover {
-      color: #2e293a;
+      color: #2C282F;
     }
   }
 }
@@ -374,13 +374,13 @@
   color: $gray;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: #2e293a;
+  background-color: #2C282F;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
   .nav__title {
-    color: #2e293a;
+    color: #2C282F;
     font-size: $type-size-6;
     background: $primary-color;
     border-top-left-radius: $border-radius;
