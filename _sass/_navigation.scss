@@ -92,7 +92,7 @@
       }
 
       &.current {
-        color: #fff;
+        color: #2e293a;
         background: $primary-color;
       }
 
@@ -197,7 +197,7 @@
     border: 0;
     outline: none;
     background-color: $primary-color;
-    color: #fff;
+    color: #2e293a;
     cursor: pointer;
   }
 
@@ -257,7 +257,7 @@
     padding: 5px;
     border: 1px solid $border-color;
     border-radius: $border-radius;
-    background: #fff;
+    background: #2e293a;
     box-shadow: 0 0 10px rgba(#000, 0.25);
 
     a {
@@ -292,7 +292,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: #fff transparent;
+      border-color: #2e293a transparent;
       display: block;
       z-index: 1;
     }
@@ -334,13 +334,13 @@
     margin-left: -0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    color: #fff;
+    color: #2e293a;
     font-weight: bold;
     background: $primary-color;
     border-radius: $border-radius;
 
     &:hover {
-      color: #fff;
+      color: #2e293a;
     }
   }
 }
@@ -374,13 +374,13 @@
   color: $gray;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: #fff;
+  background-color: #2e293a;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
   .nav__title {
-    color: #fff;
+    color: #2e293a;
     font-size: $type-size-6;
     background: $primary-color;
     border-top-left-radius: $border-radius;
