@@ -1,6 +1,6 @@
 ---
 title: Planet Python API - The handy way of connecting with it'
-date: 2023-10-24
+date: 2023-12-11
 permalink: /posts/2012/08/blog-post-1/
 bibliography: references.bib  
 tags:
@@ -11,7 +11,8 @@ tags:
 
 # Introduction
 ## What is Planet Python API?
-Planet Python API allows a user to access to satellites images.
+Planet Python API allows a user to access to satellites data, work with it and code data pipelines. I found it quite interesting if you want to download a large set of images according to some fix criterion which is a common task in research institutes. There is also a command line interface (CLI) to work with it, but it does not have the power a programming language has.
+<br> When working with the Planet Python API one notice that the examples use different version of planet, the old-style and the new-style and not all the examples are rewritten using the new-style. Long story shot, new style use python functions to define the filters meanwhile the old-style required specific dictionaries to create the filters.
 ## Handy Script comes to save time
 The reason to publish this script is simple, it saves a lot of time if you want to download a set of images given a filter up to some AOI (Area of Interest) stored in a `.json` file. 
 This becomes more interesting if you are working with OpenStreetMap data since you can get the `.json` properties using its own API.
