@@ -19,7 +19,7 @@ form {
     padding: 0;
     color: $text-color;
     border: 0;
-    border-bottom: 1px solid mix(#fff, #000, 80%);
+    border-bottom: 1px solid $primary-color;
     white-space: normal;
   }
 
@@ -86,7 +86,7 @@ select {
   box-shadow: $box-shadow;
 
   &:hover {
-    border-color: mix(#fff, $primary-color, 50%);
+    border-color: $primary-color;
   }
 }
 
