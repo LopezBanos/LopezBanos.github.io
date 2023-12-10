@@ -83,7 +83,7 @@ author:
   name             : "Sergio López Baños"
   avatar           : "profile.png"
   bio              : "Quantum Researcher at Deutschland für Luft- und Raumfahrt"
-  location         : "Murcia - Spain"
+  location         : # "Murcia - Spain"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.es/citations?hl=es&user=N1KI0MoAAAAJ"
