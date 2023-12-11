@@ -8,9 +8,7 @@ tags:
   - Planet
   - API
 ---
-
-# Introduction
-## What is Planet Python API?
+# What is Planet Python API?
 Planet Python API allows a user to access satellites data, work with it and 
 code data pipelines. I found it quite interesting if you want to download a 
 large set of images according to some fixed criteria which is a common task 
@@ -47,11 +45,15 @@ Unfortunately, not all the examples are re-written using the
 new-style. For this reason, the examples of the documentation (nowadays) are a
 bit confusing since you cannot reproduce all of them with the new-style, you
 have to re-write some of them. 
-## Handy Script comes to save time
+## Handy Module comes to save time
 The reason to publish this script is simple, it saves a lot of time if you want
 to download a set of images given a filter up to some AOI (Area of Interest) 
 stored in a `.json` file. This becomes more interesting if you are working with 
 OpenStreetMap data since you can get the `.json` properties using its own API.
+<br><br>
+The module consist in two parts, a custom filter utility and a handy search and
+order request utility. Both scripts ease the writing of the code.
+
 
 # Installation
 To download the script clone the repository 
