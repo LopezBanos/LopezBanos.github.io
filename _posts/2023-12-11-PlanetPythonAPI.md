@@ -11,11 +11,15 @@ tags:
 
 # Introduction
 ## What is Planet Python API?
-Planet Python API allows a user to access to satellites data, work with it and code data pipelines. I found it quite interesting if you want to download a large set of images according to some fixed criterion which is a common task in research institutes. There is also a command line interface (CLI) to work with it, but it does not have the power a programming language has.
+Planet Python API allows a user to access satellites data, work with it and 
+code data pipelines. I found it quite interesting if you want to download a 
+large set of images according to some fixed criteria which is a common task 
+when working with satellites data. There is also a command line interface (CLI) 
+to work with it, but it does not have the power a programming language has.
 <br><br>
-When working with the Planet Python API one notice that the examples use 
-different version of planet, the _old-style_ and the _new-style_ and not all 
-the examples are re-written using the new-style. Long story short, new style
+Planet Python API has two different approaches in its examples which correspond
+with different versions (or style) of planet, the _old-style_ and the 
+_new-style_. Long story short, new style
 use python functions to define the filters.
 ```python
     product         = [order_request.product(item_ids, bundle, item_type)]
@@ -39,6 +43,10 @@ In contrast, the old-style needs specific dictionaries to create the filters.
                      }
 }
 ```
+Unfortunately, not all the examples are re-written using the 
+new-style. For this reason, the examples of the documentation (nowadays) are a
+bit confusing since you cannot reproduce all of them with the new-style, you
+have to re-write some of them. 
 ## Handy Script comes to save time
 The reason to publish this script is simple, it saves a lot of time if you want
 to download a set of images given a filter up to some AOI (Area of Interest) 
@@ -55,7 +63,9 @@ To install the required packages
 pip install -r requirements.txt
 ```
 # Usage
-Copy the files `__init__.py`, `planetapi.py` and `utils` folder into the folder where your `**.json` are stored, **src** directory. The tree folder has to look similar to
+Copy the files `__init__.py`, `planetapi.py` and `utils` folder into the folder
+where your `**.json` are stored, **src** directory. The tree folder has to look 
+similar to
 ```bash
 ├── src
 │   ├── utils
@@ -75,10 +85,15 @@ where `**.json` represents all the `.json` in the **src** folder.
 3. Copy and paste that token in `API_KEY ='INSERT YOUR API KEY HERE'` in the `planetapi.py` script.
 
 ## Modifying the custom filter
-The `utils/custom_filter.py` use the new style of creating filters (`and_filter`, `range_filter`, `date_range_filter` and `string_in_filter`) with a geometry filter that is generated with the `.json` files that come from OpenStreetMap. <br><br>
+The `utils/custom_filter.py` use the new style of creating filters
+(`and_filter`, `range_filter`, `date_range_filter` and `string_in_filter`)
+with a geometry filter that is generated with the `.json` files that come from
+OpenStreetMap. <br><br>
 **Warning:** *If your `.json` files do not come from OSM they might have other formatting and you must do some workaround.*
+
 ## Handy Search and Order Request
 Inside the `utils/request.py` there are two main functions. 
+
 ### Handy Search Request
 This function returns the *items_ids* that match our filter and AOI.
 ```python
@@ -88,9 +103,10 @@ handy_search_request(API_KEY, ITEM_TYPES, filter):
 - **ITEM_TYPE:** Collection or Scene from the Planet where we want to get the images from. 
 - **filter:** Custom filter created with `custom_filter.py`. <br>
 
-
 ### Handy Order Request
-This function activates and builds the request. In other words, it creates a dictionary that keeps every *item_ids* we are interested in and the AOI of interest of that *item_id* image. 
+This function activates and builds the request. In other words, it creates a 
+dictionary that keeps every *item_ids* we are interested in and the AOI of 
+interest of that *item_id* image. 
 ```python
 handy_order_request(request_name, 
                     item_type, 
@@ -105,7 +121,11 @@ handy_order_request(request_name,
 - **bundle:** Choose among the bundles Planet offers.
 - **delivery:** If you want to download the assets automatically, you can modify the delivery dictionary. Currently, the images are downloaded and stored as `.zip` files.
 - **tools:** Clip to AOI tool so that we get just the area we are interested in. <br><br>
-**Warning:** *The clipping tool gives a true output if the area intersects with our item_id image, in other words, you may get just a single pixel and not the whole area of coverage. The reason behind this is that is not implemented yet in the Python Planet API.*
+**Warning:** *The clipping tool gives a true output if the area intersects 
+with our item_id image, in other words, you may get just a single pixel and not 
+the whole area of coverage. The reason behind this is that is not implemented
+yet in the Python Planet API.*
+
 ## Issues and Ordered Folders
 When downloading and requesting images in the Planet API, it is common to find 
 an exception either because the image for that AOI is not available with the 
@@ -114,4 +134,6 @@ point instead of an area). For large data pipelines, this can be a problem
 since it will stop the workflow. One must use a `try` and `except` block to 
 deal with the issues which is the current implementation in `planetapi.py`.  
 
-The `utils/directory.py` moves those files that produce issues to the `Issues` folder and the ones that are requested to the `Ordered` folder. In case the folders are not in the current directory it will create them. 
+The `utils/directory.py` moves those files that produce issues to the `Issues`
+folder and the ones that are requested to the `Ordered` folder. In case the 
+folders are not in the current directory it will create them. 
