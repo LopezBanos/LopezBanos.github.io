@@ -9,16 +9,16 @@ tags:
   - API
 ---
 # What is Planet Python API?
-Planet Python API allows a user to access satellites data, work with it and 
+Planet Python API allows a user to access satellite data, work with it and 
 code data pipelines. I found it quite interesting if you want to download a 
 large set of images according to some fixed criteria which is a common task 
-when working with satellites data. There is also a command line interface (CLI) 
+when working with satellite data. There is also a command line interface (CLI) 
 to work with it, but it does not have the power a programming language has.
 <br><br>
 Planet Python API has two different approaches in its examples which correspond
-with different versions (or style) of planet, the _old-style_ and the 
-_new-style_. Long story short, new style
-use python functions to define the filters.
+with different versions (or styles) of planet, the _old-style_ and the 
+_new-style_. Long story short, the new style
+uses python functions to define the filters.
 ```python
     product         = [order_request.product(item_ids, bundle, item_type)]
 
@@ -41,7 +41,7 @@ In contrast, the old-style needs specific dictionaries to create the filters.
                      }
 }
 ```
-Unfortunately, not all the examples are re-written using the 
+Unfortunately, not all the examples are rewritten using the 
 new-style. For this reason, the examples of the documentation (nowadays) are a
 bit confusing since you cannot reproduce all of them with the new-style, you
 have to re-write some of them. 
@@ -49,9 +49,9 @@ have to re-write some of them.
 The reason to publish this script is simple, it saves a lot of time if you want
 to download a set of images given a filter up to some AOI (Area of Interest) 
 stored in a `.json` file. This becomes more interesting if you are working with 
-OpenStreetMap data since you can get the `.json` properties using its own API.
+OpenStreetMap data since you can get the `.json` properties using its API.
 <br><br>
-The module consist in two parts, a custom filter utility and a handy search and
+The module consists of two parts, a custom filter utility and a handy search and
 order request utility. Both scripts ease the writing of the code.
 
 
@@ -87,7 +87,7 @@ where `**.json` represents all the `.json` in the **src** folder.
 3. Copy and paste that token in `API_KEY ='INSERT YOUR API KEY HERE'` in the `planetapi.py` script.
 
 ## Modifying the custom filter
-The `utils/custom_filter.py` use the new style of creating filters
+The `utils/custom_filter.py` uses the new style of creating filters
 (`and_filter`, `range_filter`, `date_range_filter` and `string_in_filter`)
 with a geometry filter that is generated with the `.json` files that come from
 OpenStreetMap. <br><br>
@@ -125,7 +125,7 @@ handy_order_request(request_name,
 - **tools:** Clip to AOI tool so that we get just the area we are interested in. <br><br>
 **Warning:** *The clipping tool gives a true output if the area intersects 
 with our item_id image, in other words, you may get just a single pixel and not 
-the whole area of coverage. The reason behind this is that is not implemented
+the whole area of coverage. The reason behind this is that it has not been implemented
 yet in the Python Planet API.*
 
 ## Issues and Ordered Folders
